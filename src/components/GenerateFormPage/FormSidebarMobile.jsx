@@ -3,7 +3,6 @@ import {
   SheetContent,
   SheetTrigger,
   SheetHeader,
-  SheetDescription,
 } from "@/components/ui/sheet";
 import { formMenus } from "@/constants";
 import { Fragment } from "react";
@@ -24,15 +23,13 @@ const FormSidebarMobile = () => {
       </SheetTrigger>
       <SheetContent>
         <SheetHeader>
-          <SheetDescription>
-            <aside className="border">
-              {formMenus.map((item) => (
-                <Fragment key={item.id}>
-                  {item.component({ item: item })}
-                </Fragment>
-              ))}
-            </aside>
-          </SheetDescription>
+          <aside className="border">
+            {formMenus.map((item) => (
+              <Fragment key={item.id}>
+                {item.component({ item: item })}
+              </Fragment>
+            ))}
+          </aside>
         </SheetHeader>
       </SheetContent>
     </Sheet>

@@ -9,6 +9,12 @@ const HomePage = () => {
   const navigate = useNavigate();
   const [loader, setLoader] = useState(true);
 
+  const sortedFormsList = structuredClone(formState?.forms).sort((a, b) => {
+    const dateOne = moment(a.date);
+    const dateTwo = moment(b.date);
+    return dateTwo.diff(dateOne);
+  });
+
   useEffect(() => {
     (() => {
       setTimeout(() => {
@@ -37,20 +43,21 @@ const HomePage = () => {
             );
           return (
             <Fragment>
-              {formState?.forms?.map((item) => (
-                <article
-                  key={item.id}
-                  onClick={() => navigate(`/viewform/${item.id}`)}
-                  className="p-4 border border-neutral-300 w-full max-w-[300px] rounded-md hover:bg-neutral-200 shadow-lg cursor-pointer"
-                >
-                  <h1 className="text-2xl text-center font-medium mb-8">
-                    {item.name}
-                  </h1>
-                  <p className="text-right text-neutral-400">
-                    {moment(item.date).fromNow()}
-                  </p>
-                </article>
-              ))}
+              {sortedFormsList &&
+                sortedFormsList.map((item) => (
+                  <article
+                    key={item.id}
+                    onClick={() => navigate(`/viewform/${item.id}`)}
+                    className="p-4 border border-neutral-300 w-full max-w-[300px] rounded-md hover:bg-neutral-200 shadow-lg cursor-pointer"
+                  >
+                    <h1 className="text-2xl text-center font-medium mb-8">
+                      {item.name}
+                    </h1>
+                    <p className="text-right text-neutral-400">
+                      {moment(item.date).fromNow()}
+                    </p>
+                  </article>
+                ))}
             </Fragment>
           );
         })()}
