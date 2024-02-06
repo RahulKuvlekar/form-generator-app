@@ -2,11 +2,17 @@
 
 `Form Generator App` is designed to create dynamic forms using a graphical user interface (UI), and it allows users to add validation to the forms.
 
+## Live App - [https://rahulkuvlekar-form-generator-app.netlify.app](https://rahulkuvlekar-form-generator-app.netlify.app)
+
+## Demo
+
 ![Form Generator App Demo](docs/FormGeneratorDemo.gif)
 
 # Contents
 
 - [Form Generator App](#form-generator-app)
+  - [Live App - https://rahulkuvlekar-form-generator-app.netlify.app](#live-app---httpsrahulkuvlekar-form-generator-appnetlifyapp)
+  - [Demo](#demo)
 - [Contents](#contents)
   - [Why?](#why)
   - [Installation](#installation)
