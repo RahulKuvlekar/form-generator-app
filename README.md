@@ -12,6 +12,7 @@
   - [Installation](#installation)
   - [Folder Structure](#folder-structure)
   - [Technologies \& Libraries used](#technologies--libraries-used)
+  - [Features](#features)
   - [Screens](#screens)
 
 ### Why?
@@ -83,11 +84,22 @@ src/
 ---
 
 - React
+- Context API
 - React Router
 - Vanila Css
 - TailwindCss
 - ShadCn
 - Moment.js
+
+### Features
+
+---
+
+- Added Input Element with validation like input type, minimum length, maximum length & is required
+- Added Dropdown Element with validation
+- Added Checkbox Element with validation
+- Added Radio Element with validation
+- Mobile Responsiveness
 
 ### Screens
 
