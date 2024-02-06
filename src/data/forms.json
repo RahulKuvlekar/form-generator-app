@@ -1,0 +1,133 @@
+[
+  {
+    "date": "2024-02-06T10:12:05.996Z",
+    "id": "64f285d5-9d64-4cfd-a05b-834173c589f6",
+    "name": "Register Form",
+    "FormElements": [
+      {
+        "element": "input",
+        "id": "feafcf84-1730-48f1-a9e2-3f53d030ad3a",
+        "label": "Fullname",
+        "placeholder": "john doe",
+        "type": "text",
+        "validation": {
+          "maxLength": "100",
+          "minLength": "3",
+          "required": true
+        }
+      },
+      {
+        "element": "input",
+        "id": "c456e53e-7e47-4c23-b618-1301f99e71c1",
+        "label": "Email Id",
+        "placeholder": "johndoe@gmail.com",
+        "type": "email",
+        "validation": {
+          "maxLength": "",
+          "minLength": "3",
+          "required": true
+        }
+      },
+      {
+        "element": "input",
+        "id": "46aa4fd9-9232-4ba5-8ad4-8de772bb81dc",
+        "label": "Password",
+        "placeholder": "XXXX-XXXX-XXXX",
+        "type": "password",
+        "validation": {
+          "maxLength": "",
+          "minLength": "3",
+          "required": true
+        }
+      },
+      {
+        "element": "select",
+        "id": "3b3d8769-46ee-4922-998a-e5601c38a418",
+        "label": "Are you currently working ?? ",
+        "options": ["Yes", "No"],
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "element": "radio",
+        "id": "892ce390-852b-427e-9996-18159ad021f6",
+        "label": "Please select your preferred contact method ?? ",
+        "options": ["Text", "Letter", "Call", "Linkedin", "Other"],
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "element": "checkbox-multiple",
+        "id": "a465e740-a252-4679-b5ef-23ac5794ec6f",
+        "label": "Choose your Favorite sports ?? ",
+        "fields": ["Football", "Cricket", "Basketball", "Other"],
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "element": "checkbox-single",
+        "id": "bd949a09-8568-4ae8-8793-4b4269cef690",
+        "label": "Do you want to subscribe ?? ",
+        "fields": [],
+        "validation": {
+          "required": false
+        }
+      }
+    ]
+  },
+  {
+    "date": "2024-01-06T10:12:05.996Z",
+    "id": "wertyudasgh-9d64-4cfd-a05b-834173c589f6-a05basadasgh",
+    "name": "Login Up Form",
+    "FormElements": [
+      {
+        "element": "input",
+        "id": "1301f99e71c1-7e47-4c23-b618-1301f99e71c1",
+        "label": "Username",
+        "placeholder": "johndoe_007",
+        "type": "text",
+        "validation": {
+          "maxLength": "",
+          "minLength": "3",
+          "required": true
+        }
+      },
+      {
+        "element": "input",
+        "id": "c456e53e-1301f99e71c1-4c23-c456e53e-1301f99e71c1",
+        "label": "Email Id",
+        "placeholder": "johndoe@gmail.com",
+        "type": "email",
+        "validation": {
+          "maxLength": "",
+          "minLength": "3",
+          "required": true
+        }
+      },
+      {
+        "element": "input",
+        "id": "8de772bb81dc-9232-4ba5-9232-8de772bb81dc",
+        "label": "Password",
+        "placeholder": "XXXX-XXXX-XXXX",
+        "type": "password",
+        "validation": {
+          "maxLength": "",
+          "minLength": "3",
+          "required": true
+        }
+      },
+      {
+        "element": "checkbox-single",
+        "id": "4ae8-bd949a09-4ae8-bd949a09-4b4269cef690",
+        "label": "Do you want to subscribe & recieve mails ?? ",
+        "fields": [],
+        "validation": {
+          "required": true
+        }
+      }
+    ]
+  }
+]
